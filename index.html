@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/dbed6b6114.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>giardesign</title>
+  </head>
+  <body>
+    <div class="min-h-[72px] w-full">
+      <!-- Navbar -->
+      <nav class="flex items-center text-sm py-[24px] bg:white">
+        <img
+          src="./assets/logo.png"
+          alt="logo"
+          class="h-19 px-[89px] cursor-pointer"
+        />
+        <div class="flex-1">
+          <ul class="flex-1 text-right">
+            <li class="list-none inline-block px-12">
+              <a href="#offer" class="no-underline">Oferta</a>
+            </li>
+            <li class="list-none inline-block px-12">
+              <a href="#about" class="no-underline">O firmie</a>
+            </li>
+            <li class="list-none inline-block px-12">
+              <a href="#works" class="no-underline">Realizacje</a>
+            </li>
+            <li class="list-none inline-block px-12">
+              <a href="#contact" class="no-underline">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+        <img src="./assets/icon-1.svg" alt="search" class="h-19 px-12" />
+      </nav>
+    </div>
+
+    <!-- Hero -->
+    <div class="flex h-screen">
+      <div class="flex w-1/2 items-center bg-[#DCC1AB]">
+        <div class="px-[89px] py-12 w-fit">
+          <h1
+            class="font-['Montserrat'] font-medium text-[60px] leading-[70px] mb-[44px]"
+          >
+            Nowoczesna
+            <br />
+            aranżacja
+            <br />
+            Twojego ogrodu
+          </h1>
+          <p class="text-[16px] py-[24px] mb-[72px]">
+            Marka GiardDesign to wieloletnie doświadczenie i wysoka <br />
+            estetyka realizacji. Oferujemy kompleksowy zakres usług <br />
+            z indywidualnym podejściem do każdego projektu.
+          </p>
+          <div class="flex gap-[36px]">
+            <button class="flex py-3 px-6 text-white rounded-full bg-[#1B5B31]">
+              Skontaktuj się z nami
+            </button>
+
+            <button
+              class="flex py-3 px-6 items-center text-[#1B5B31] rounded-full border border-[#1B5B31]"
+            >
+              Zobacz nasze realizacje &nbsp;
+              <img src="./assets/arrow.svg" alt="arrow" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="inline-block w-1/2 items-center">
+        <img
+          src="./assets/hero.png"
+          alt="hero"
+          class="h-screen w-full object-fit"
+        />
+      </div>
+    </div>
+    <!-- Offer -->
+
+    <div class="flex flex-col h-screen bg-[#F5F0EC]">
+      <div class="pt-[120px] pb-[96px] px-[200px]">
+        <h2 class="text-[#1B5B31] text-[12px] leading-[16px] mb-[16px]">
+          Oferta
+        </h2>
+        <h1 class="text-[48px]">
+          <span class="font-['Montserrat'] font-medium">Działamy</span>
+          <span class="italic font-medium">kompleksowo</span>
+        </h1>
+        <p>
+          Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy
+          nowoczesne ogrody <br />
+          przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt,
+          zwizualizujemy go i wcielimy <br />
+          w życie, a na każdym etapie posłużymy radą i wieloletnim
+          doświadczeniem.
+        </p>
+      </div>
+      <div class="flex items-center justify-center space-x-16 mb-[160px]">
+        <div
+          class="bg-white w-[370px] h-[378px] rounded-[28px] hover:ease-in hover:drop-shadow-2xl]"
+        >
+          <div class="px-[40px] py-[48px]">
+            <div class="flex flex-col pb-[inherit]">
+              <img
+                src="./assets/offer-1.png"
+                alt="icon"
+                class="w-[44px] pb-8"
+              />
+              <h2
+                class="font-['Montserrat'] font-medium text-[28px] tracking-tighter pb-3"
+              >
+                Projekty
+              </h2>
+              <p class="text-sm tracking-tight">
+                Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
+                wykorzystaniem istniejącej przestrzeni.
+              </p>
+            </div>
+
+            <button class="btn-offer">
+              Dowiedz się więcej &nbsp;
+              <img src="./assets/arrow-right.svg" alt="arrow" />
+            </button>
+          </div>
+        </div>
+        <div class="bg-white w-[370px] h-[378px] rounded-[28px]">
+          <div class="px-[40px] py-[48px]">
+            <div class="flex flex-col pb-[inherit]">
+              <img
+                src="./assets/offer-2.png"
+                alt="icon"
+                class="w-[44px] pb-8"
+              />
+              <h2
+                class="font-['Montserrat'] font-medium text-[28px] tracking-tighter pb-3"
+              >
+                Wizualizacje
+              </h2>
+              <p class="text-sm tracking-tight">
+                Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego
+                spaceru animowanego w technologii 3D.
+              </p>
+            </div>
+
+            <button class="btn-offer">
+              Dowiedz się więcej &nbsp;
+              <img src="./assets/arrow-right.svg" alt="arrow" />
+            </button>
+          </div>
+        </div>
+        <div class="bg-white w-[370px] h-[378px] rounded-[28px]">
+          <div class="px-[40px] py-[48px]">
+            <div class="flex flex-col pb-[inherit]">
+              <img
+                src="./assets/offer-3.png"
+                alt="icon"
+                class="w-[44px] pb-8"
+              />
+              <h2
+                class="font-['Montserrat'] font-medium text-[28px] tracking-tighter pb-3"
+              >
+                Realizacje
+              </h2>
+              <p class="text-sm tracking-tight">
+                Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i
+                zaawansowanych technologii.
+              </p>
+            </div>
+            <button class="btn-offer">
+              Zobacz nasze realizacje &nbsp;
+              <img src="./assets/arrow-right.svg" alt="arrow" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

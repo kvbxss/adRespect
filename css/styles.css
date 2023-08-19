@@ -1,0 +1,14 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .btn-offer {
+       @apply flex items-center pb-1 border-b-[1px] border-solid border-[#1B5B31] text-[#1B5B31]
+    }
+}
