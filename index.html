@@ -15,6 +15,7 @@
     ></script>
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
     <title>giardesign</title>
   </head>
   <body>
@@ -109,7 +110,7 @@
       </div>
       <div class="flex items-center justify-center space-x-16 mb-[160px]">
         <div
-          class="bg-white w-[370px] h-[378px] rounded-[28px] hover:ease-in hover:drop-shadow-2xl]"
+          class="bg-white w-[370px] h-[378px] rounded-[28px] hover:drop-shadow-2xl ease-in"
         >
           <div class="px-[40px] py-[48px]">
             <div class="flex flex-col pb-[inherit]">
@@ -129,7 +130,9 @@
               </p>
             </div>
 
-            <button class="btn-offer">
+            <button
+              class="flex items-center pb-1 border-b-[1px] border-solid border-[#1B5B31] text-[#1B5B31]"
+            >
               Dowiedz się więcej &nbsp;
               <img src="./assets/arrow-right.svg" alt="arrow" />
             </button>
@@ -154,7 +157,9 @@
               </p>
             </div>
 
-            <button class="btn-offer">
+            <button
+              class="flex items-center pb-1 border-b-[1px] border-solid border-[#1B5B31] text-[#1B5B31]"
+            >
               Dowiedz się więcej &nbsp;
               <img src="./assets/arrow-right.svg" alt="arrow" />
             </button>
@@ -178,7 +183,9 @@
                 zaawansowanych technologii.
               </p>
             </div>
-            <button class="btn-offer">
+            <button
+              class="flex items-center pb-1 border-b-[1px] border-solid border-[#1B5B31] text-[#1B5B31]"
+            >
               Zobacz nasze realizacje &nbsp;
               <img src="./assets/arrow-right.svg" alt="arrow" />
             </button>
@@ -187,6 +194,72 @@
       </div>
     </div>
 
-    <script src="./script.js"></script>
+    <!-- About -->
+    <div class="flex h-screen">
+      <div class="inline-block w-1/2 items-center">
+        <img
+          src="./assets/about.png"
+          alt="about"
+          class="h-screen w-full object-fit"
+        />
+      </div>
+
+      <div class="flex w-1/2 items-center bg-[#1B5B31]">
+        <div class="pl-[96px] w-fit text-white">
+          <h2 class="text-[12px] leading-[16px] mb-[16px]">O firmie</h2>
+          <h1 class="font-medium text-[48px] leading-tight mb-[40px]">
+            <span class="font-['Montserrat']"
+              >Tworzymy <br />
+              z</span
+            >
+            <span class="italic">pasją</span>
+          </h1>
+          <p class="text-[16px] py-[24px] mb-[72px]">
+            Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą <br />
+            wykwalifikowani projektanci oraz architekci, których zadaniem jest
+            <br />
+            rozpoznanie i realizacja potrzeb każdego Klienta. Nasza <br />
+            specjalizacja to przestrzenie nowoczesne, które charakteryzuje
+            <br />
+            minimalizm, geometria i elegancka prostota. Tworzymy ogrody <br />
+            małoobsługowe, dostosowane do współczesnego trybu życia.
+          </p>
+          <div class="flex gap-[36px]">
+            <button
+              class="flex py-3 px-6 items-center rounded-full border border-white"
+            >
+              Poznaj nas bliżej &nbsp;
+              <img src="./assets/arrow-right-w.svg" alt="arrow" />
+            </button>
+
+            <button
+              class="flex py-3 px-6 items-center text-[#1B5B31] rounded-full border border-[#1B5B31]"
+            >
+              Zobacz nasze realizacje &nbsp;
+              <img src="./assets/arrow.svg" alt="arrow" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Works -->
+    <div class="flex flex-col h-screen bg-[#DCC1AB] gap-[96px]">
+      <div class="pt-[120px] pl-[160px]">
+        <h2 class="text-[12px] leading-[16px] mb-[16px] text-[#1B5B31]">
+          Realizacje
+        </h2>
+        <h1 class="text-[48px]">
+          <span class="font-['Montserrat'] font-medium">Nasze</span>
+          <span class="italic font-medium">projekty</span>
+      </div>
+      <div class="pb-[44px]">
+        <div class="masonry">
+
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
