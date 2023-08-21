@@ -29,8 +29,16 @@
         />
         <div class="flex-1">
           <ul class="flex-1 text-right">
-            <li class="list-none inline-block px-12">
-              <a href="#offer" class="no-underline">Oferta</a>
+            <li id="dropdown-wrapper" class="list-none inline-block px-12">
+              <button onclick="toggleMenu()" class="flex gap-[5px] flex-row items-center">Oferta
+                <img id="arrow-dropdown" src="./assets/arrow-down.svg" alt="arrow" />
+              </button>
+              <div id="menu" class="absolute hidden flex flex-col bg-[#F5F0EC] drop-shadow-lg text-left mt-[10px]">
+                <a class="px-5 py-3 hover:bg-white hover:scale-105 border-b border-[#DCC1AB]" href="#">Japoński</a>
+                <a class="px-5 py-3 hover:bg-white hover:scale-105 border-b border-[#DCC1AB]" href="#">Geometryczny</a>
+                <a class="px-5 py-3 hover:bg-white hover:scale-105 border-b border-[#DCC1AB]" href="#">Angielski</a>
+                <a class="px-5 py-3 hover:bg-white hover:scale-105" href="#">Indywidualny</a>
+            </div>
             </li>
             <li class="list-none inline-block px-12">
               <a href="#about" class="no-underline">O firmie</a>
@@ -38,12 +46,22 @@
             <li class="list-none inline-block px-12">
               <a href="#works" class="no-underline">Realizacje</a>
             </li>
-            <li class="list-none inline-block px-12">
+            <li class="list-none inline-block px-12"> 
               <a href="#contact" class="no-underline">Kontakt</a>
             </li>
           </ul>
         </div>
-        <img src="./assets/icon-1.svg" alt="search" class="h-19 px-12" />
+        <div id="search-wrapper flex flex-row items-center justify-center" >
+          <form action="" id="search" class="inline-block hidden sticky">
+            <input type="text" placeholder="Wyszukaj" class="bg-[#F5F0EC] h-[20px] border-none outline-none rounded-sm placeholder:-translate-l-6" />
+            <input type="submit" value="" class="bg-[#F5F0EC] border-none outline-none" />
+          </form>
+            <button onclick="toggleSearch()">
+            <img src="./assets/icon-1.svg" id="magn-glass"  alt="search" class="h-19 px-12" />
+          </button>
+          
+          
+      </div>
       </nav>
     </div>
 
@@ -66,15 +84,15 @@
             z indywidualnym podejściem do każdego projektu.
           </p>
           <div class="flex gap-[36px]">
-            <button class="flex py-3 px-6 text-white rounded-full bg-[#1B5B31]">
+            <button class="flex py-3 px-6 text-white rounded-full bg-[#1B5B31] hover:bg-[#DCC1AB] hover:border-[#1B5B31] hover:border-[1px] hover:text-[#1B5B31] hover:scale-105">
               Skontaktuj się z nami
             </button>
 
             <button
-              class="flex py-3 px-6 items-center text-[#1B5B31] rounded-full border border-[#1B5B31]"
+              class="flex py-3 px-6 items-center text-[#1B5B31] rounded-full border border-[#1B5B31]  hover:drop-shadow-none hover:scale-105"
             >
               Zobacz nasze realizacje &nbsp;
-              <img src="./assets/arrow.svg" alt="arrow" />
+              <img src="./assets/arrow.svg" alt="arrow" class="hover:rotate-[180deg]"/>
             </button>
           </div>
         </div>
@@ -131,14 +149,14 @@
             </div>
 
             <button
-              class="flex items-center pb-1 border-b-[1px] border-solid border-[#1B5B31] text-[#1B5B31]"
+              class="flex items-center pb-1 border-b-[1px] border-solid border-[#1B5B31] text-[#1B5B31] hover:border-none hover:pb-0 hover:drop-shadow-none hover:scale-105"
             >
               Dowiedz się więcej &nbsp;
               <img src="./assets/arrow-right.svg" alt="arrow" />
             </button>
           </div>
         </div>
-        <div class="bg-white w-[370px] h-[378px] rounded-[28px]">
+        <div class="bg-white w-[370px] h-[378px] rounded-[28px] hover:drop-shadow-2xl ease-in">
           <div class="px-[40px] py-[48px]">
             <div class="flex flex-col pb-[inherit]">
               <img
@@ -158,14 +176,14 @@
             </div>
 
             <button
-              class="flex items-center pb-1 border-b-[1px] border-solid border-[#1B5B31] text-[#1B5B31]"
+              class="flex items-center pb-1 border-b-[1px] border-solid border-[#1B5B31] text-[#1B5B31] hover:border-none hover:pb-0 hover:drop-shadow-none hover:scale-105"
             >
               Dowiedz się więcej &nbsp;
               <img src="./assets/arrow-right.svg" alt="arrow" />
             </button>
           </div>
         </div>
-        <div class="bg-white w-[370px] h-[378px] rounded-[28px]">
+        <div class="bg-white w-[370px] h-[378px] rounded-[28px] hover:drop-shadow-2xl ease-in">
           <div class="px-[40px] py-[48px]">
             <div class="flex flex-col pb-[inherit]">
               <img
@@ -184,7 +202,7 @@
               </p>
             </div>
             <button
-              class="flex items-center pb-1 border-b-[1px] border-solid border-[#1B5B31] text-[#1B5B31]"
+              class="flex items-center pb-1 border-b-[1px] border-solid border-[#1B5B31] text-[#1B5B31] hover:border-none hover:pb-0 hover:drop-shadow-none hover:scale-105"
             >
               Zobacz nasze realizacje &nbsp;
               <img src="./assets/arrow-right.svg" alt="arrow" />
@@ -210,8 +228,7 @@
           <h1 class="font-medium text-[48px] leading-tight mb-[40px]">
             <span class="font-['Montserrat']"
               >Tworzymy <br />
-              z</span
-            >
+              z</span>
             <span class="italic">pasją</span>
           </h1>
           <p class="text-[16px] py-[24px] mb-[72px]">
@@ -226,10 +243,10 @@
           </p>
           <div class="flex gap-[36px]">
             <button
-              class="flex py-3 px-6 items-center rounded-full border border-white"
+              class="flex py-3 px-6 items-center rounded-full border border-white hover:drop-shadow-none hover:scale-105"
             >
               Poznaj nas bliżej &nbsp;
-              <img src="./assets/arrow-right-w.svg" alt="arrow" />
+              <img src="./assets/arrow-right-w.svg" alt="arrow" class="hover:rotate-[90deg]" />
             </button>
 
             <button
@@ -244,7 +261,7 @@
     </div>
 
     <!-- Works -->
-    <div class="flex flex-col h-screen bg-[#DCC1AB] gap-[96px]">
+    <div class="flex flex-col h-max bg-[#DCC1AB] gap-[96px]">
       <div class="pt-[120px] pl-[160px]">
         <h2 class="text-[12px] leading-[16px] mb-[16px] text-[#1B5B31]">
           Realizacje
@@ -253,13 +270,118 @@
           <span class="font-['Montserrat'] font-medium">Nasze</span>
           <span class="italic font-medium">projekty</span>
       </div>
-      <div class="pb-[44px]">
-        <div class="masonry">
+      <div class="pb-[44px] relative">
+       
+      
+        <div class=" absolute block content-[''] bg-gradient-to-b from-[#D6B79E] from-0% via-[#D7B9A0] via-16.67% via-[#D9BCA5] via-54.69% to-[#DCC1AB] to-100%">
+        <div class="masonry w-full absolute">       
+<img src="https://picsum.photos/451/601?random=1">
+<img src="https://picsum.photos/452/338?random=1">
+<img src="https://picsum.photos/451/451?random=1">
+<img src="https://picsum.photos/451/601?random=1">
+<img src="https://picsum.photos/452/338?random=2">
+<img src="https://picsum.photos/451/451?random=3">
+<img src="https://picsum.photos/451/601?random=1">
+<img src="https://picsum.photos/452/338?random=2">
+<img src="https://picsum.photos/451/451?random=3">
+<img src="https://picsum.photos/451/601?random=1">
+<img src="https://picsum.photos/452/338?random=2">
+<img src="https://picsum.photos/451/451?random=3">
+<img src="https://picsum.photos/451/601?random=1">
+<img src="https://picsum.photos/452/338?random=2">
+<img src="https://picsum.photos/451/451?random=3">
+<img src="https://picsum.photos/451/601?random=1">
+<img src="https://picsum.photos/452/338?random=2">
+<img src="https://picsum.photos/451/451?random=3">
+<img src="https://picsum.photos/451/601?random=1">
+<img src="https://picsum.photos/452/338?random=2">
+<img src="https://picsum.photos/451/451?random=3">
+  </div>
+</div>
+  <!-- class="bg-gradient-to-b z-100 from-[#D6B79E] from-0% via-[#D7B9A0] via-16.67% via-[#D9BCA5] via-54.69% to-[#DCC1AB] to-100% h-[1000px]"></div> -->
 
+  </div>
+    </div>
+    
+    <!-- Contact -->
+    <div class="flex bg-[#F5F0EC] py-[60px] h-fit items-center justify-center">
+      <div class="bg-[#1B5B31] w-fit">
+        <div class="flex px-[110px] py-[120px] gap-[64px] text-white">
+          <h1 class="text-[40px] pt-[22px] leading-tight">
+          <span class="tracking-tight font-['Montserrat']">Zostańmy w kontakcie! <br/>
+            Znajdziesz nas na</span>
+            <span class="tracking-[1px] font-medium italic">Instagramie.</span>
+          </h1>
+          <div>
+            <p class="text-[16px]">
+              Śledź nasze <br/>
+              najnowsze realizacje!
+            </p>
+           <button class="flex mt-[24px] py-3 px-6 rounded-full text-[#1B5B31] bg-white hover:bg-[#1B5B31] hover:text-white hover:scale-105 hover:border-white hover:border-[1px]">
+              Instagram
+            </button>
+          </div>
         </div>
       </div>
     </div>
 
+    <!-- Footer -->
+    <div class="flex bg-[#111111] justify-center">
+      <div class="py-[80px] overflow-auto w-[1040px]">
+       <div class="flex flex-row justify-between text-white items-center mb-[62px]">
+        <img src="./assets/logo-w.png" alt="logo" class="h-[19px]" />
+        <div class="flex flex-row space-x-6 items-center">
+          <p class="text-[16px]">
+            Daj znać, co możemy dla Ciebie zrobić!
+          </p>
+          <button class="flex py-3 px-6 text-white rounded-full bg-[#1B5B31] hover:bg-white hover:text-[#1B5B31] hover:scale-105">
+            Skontaktuj się z nami
+          </button>
+        </div>
+       </div>
+       <div class="h-[1px] bg-[#F5F0EC]">
+
+       </div>
+            <div class="flex text-[14px] text-white mt-[62px] mb-[120px]">
+              <ul class="flex-1 text-left">
+                <li class="list-none inline-block pr-12">
+                  <a href="#offer" class="no-underline">Kontakt</a>
+                </li>
+                <li class="list-none inline-block pr-12">
+                  <a href="#about" class="no-underline">Instagram</a>
+                </li>
+                <li class="list-none inline-block pr-12">
+                  <a href="#works" class="no-underline">Facebook</a>
+                </li>
+                
+                <li class="list-none inline-block">
+                  <a href="#contact" class="no-underline">LinkedIn</a>
+                </li>
+              </ul>
+
+              <ul class="flex-1 text-right">
+                <li class="list-none inline-block pr-12">
+                <a> 000-000-000</a>
+                </li>
+                <li class="list-none inline-block">
+                 <a>giarddesign@kontakt.pl</a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="flex flex-row justify-between text-white items-center">
+              <p>
+                Prawa zastrzeżone © 2022
+              </p>
+              <div class="flex flex-row space-x-4">
+                <p>
+                  made by
+                </p>
+                <img src="./assets/logo-full-light.png" alt="logo" class="h-[23px]" />
+              </div>
+            </div>
+      </div>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>
