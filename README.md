@@ -57,11 +57,11 @@ The project uses the following technologies:
 
 Navigate through the different sections of the website using the navigation menu or the scrolling features. Explore the different sections to learn about Giardesign's services, view their completed projects, and find contact information.
 
-##Contribution
+## Contributing
 
 Contributions are welcome! If you find any issues or would like to enhance the website, feel free to fork the repository and submit a pull request.
 
-##License
+## License
 
 This project is licensed under the MIT License.
 
