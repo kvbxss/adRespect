@@ -16,10 +16,12 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>giardesign</title>
   </head>
   <body>
-    <div class="min-h-[72px] w-full">
+    <div class="min-h-[72px] w-full" >
       <!-- Navbar -->
       <nav class="flex items-center text-sm py-[24px] bg:white">
         <img
@@ -27,8 +29,9 @@
           alt="logo"
           class="h-19 px-[89px] cursor-pointer"
         />
+        
         <div class="flex-1">
-          <ul class="flex-1 text-right">
+          <ul id="navbar" class="flex-1 text-right">
             <li id="dropdown-wrapper" class="list-none inline-block px-12">
               <button onclick="toggleMenu()" class="flex gap-[5px] flex-row items-center">Oferta
                 <img id="arrow-dropdown" src="./assets/arrow-down.svg" alt="arrow" />
@@ -51,22 +54,24 @@
             </li>
           </ul>
         </div>
-        <div id="search-wrapper flex flex-row items-center justify-center" >
+        <div id="search-wrapper " >
           <form action="" id="search" class="inline-block hidden sticky">
-            <input type="text" placeholder="Wyszukaj" class="bg-[#F5F0EC] h-[20px] border-none outline-none rounded-sm placeholder:-translate-l-6" />
-            <input type="submit" value="" class="bg-[#F5F0EC] border-none outline-none" />
+            <input type="text" placeholder="Wyszukaj" class="bg-white drop-shadow-md border-[1px] border-black h-[32px] outline-none rounded-lg placeholder:pl-[10px]" />
           </form>
             <button onclick="toggleSearch()">
             <img src="./assets/icon-1.svg" id="magn-glass"  alt="search" class="h-19 px-12" />
           </button>
-          
-          
-      </div>
+        </div>
+        <!-- <span class="text-3xl cursor-pointer mx-2 lg:hidden block">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+           -->
+      
       </nav>
     </div>
 
     <!-- Hero -->
-    <div class="flex h-screen">
+    <div class="flex h-screen ">
       <div class="flex w-1/2 items-center bg-[#DCC1AB]">
         <div class="px-[89px] py-12 w-fit">
           <h1
@@ -273,7 +278,7 @@
       <div class="pb-[44px] relative">
        
       
-        <div class=" absolute block content-[''] bg-gradient-to-b from-[#D6B79E] from-0% via-[#D7B9A0] via-16.67% via-[#D9BCA5] via-54.69% to-[#DCC1AB] to-100%">
+        <div class=" block content-[''] bg-gradient-to-b from-[#D6B79E] from-0% via-[#D7B9A0] via-16.67% via-[#D9BCA5] via-54.69% to-[#DCC1AB] to-100%"></div>
         <div class="masonry w-full absolute">       
 <img src="https://picsum.photos/451/601?random=1">
 <img src="https://picsum.photos/452/338?random=1">
@@ -296,7 +301,7 @@
 <img src="https://picsum.photos/451/601?random=1">
 <img src="https://picsum.photos/452/338?random=2">
 <img src="https://picsum.photos/451/451?random=3">
-  </div>
+  
 </div>
   <!-- class="bg-gradient-to-b z-100 from-[#D6B79E] from-0% via-[#D7B9A0] via-16.67% via-[#D9BCA5] via-54.69% to-[#DCC1AB] to-100% h-[1000px]"></div> -->
 

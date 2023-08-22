@@ -12,10 +12,12 @@ var macyInstance = Macy({
   },
 });
 
-var menu = document.getElementById("menu");
-var dropdownimg = document.getElementById("arrow-dropdown");
-var search = document.getElementById("search");
-var searchimg = document.getElementById("magn-glass");
+const navbar = document.getElementById("navbar");
+const menu = document.getElementById("menu");
+const dropdownimg = document.getElementById("arrow-dropdown");
+const search = document.getElementById("search");
+const searchimg = document.getElementById("magn-glass");
+
 function toggleMenu() {
   if (menu.classList.contains("hidden")) {
     menu.classList.remove("hidden");
@@ -38,7 +40,8 @@ window.onclick = function (event) {
     dropdownimg.style.transform = "rotate(0deg)";
   }
 
-  var dropdownWrapper = document.getElementById("dropdown-wrapper");
+  const dropdownWrapper = document.getElementById("dropdown-wrapper");
+
   if (
     !dropdownWrapper.contains(event.target) &&
     !menu.classList.contains("hidden")
@@ -50,7 +53,9 @@ window.onclick = function (event) {
   if (search.classList.contains("hidden")) {
     searchimg.style.transform = "rotate(0deg)";
   }
-  var searchWrapper = document.getElementById("search-wrapper");
+
+  const searchWrapper = document.getElementById("search-wrapper");
+
   if (
     !searchWrapper.contains(event.target) &&
     !search.classList.contains("hidden")
@@ -58,3 +63,13 @@ window.onclick = function (event) {
     search.classList.add("hidden");
   }
 };
+
+function Menu(e) {
+  e.name === "menu"
+    ? ((e.name = "close"),
+      navbar.classList.add("top-[80px]"),
+      navbar.classList.add("opacity-100"))
+    : ((e.name = "menu"),
+      navbar.classList.remove("top-[80px]"),
+      navbar.classList.remove("opacity-100"));
+}
