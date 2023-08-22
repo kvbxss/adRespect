@@ -1,6 +1,7 @@
 * {
     transition: all 0.3s ease-in;
     font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
 }
 
 @tailwind base;
